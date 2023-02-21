@@ -1,4 +1,4 @@
-/*----------RESETS-----------*/
+/*------------------RESETS----------------*/
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -116,7 +116,7 @@
     max-width: 100%;
   }
 
-/*----------GRID-----------*/
+/*------------------GRID----------------*/
 .container {
     max-width: 140rem;
     width: 100%;
@@ -130,13 +130,14 @@
     }
 }
 
-/*-----------HEADER-----------*/
+/*------------------HEADER----------------*/
 .header {
     background: #2b2b2b;
     padding: 2rem 0;
     position: relative;
     position: fixed;
     width: 100%;
+    z-index: 99;
 }
 
 .header .branding img {
@@ -252,7 +253,7 @@
     }
 }
 
-/*--------------BANNER-------------*/
+/*------------------BANNER----------------*/
 .banner {
     background: #ffffff;
     padding: 5rem 0;
@@ -311,6 +312,58 @@
 
     .banner img {
         margin-bottom: 3rem;
+    }
+}
+
+/*------------------HM SERVICES----------------*/
+.hm-services {
+    background: #2b2b2b;
+    padding: 8rem 0;
+}
+
+.hm-services .hm-services__item i {
+    color: #ffa700;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.hm-services .hm-services__item h4 {
+    color: #ffa700;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.hm-services .hm-services__item p {
+    color: #ffffff;
+    text-align: justify;
+    margin: 2rem 0;
+}
+
+.hm-services .hm-services__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hm-services .hm-services__item {
+    text-align: center;
+    margin: 0 5rem;
+}
+
+@media screen and (max-width:500px) {
+    .hm-services .hm-services__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hm-services .hm-services__item {
+        text-align: center;
+        margin: 5rem 0;
+    }
+
+    .hm-services .hm-services__item p {
+        color: #ffffff;
+        text-align: justify;
+        margin: 2rem 4rem;
     }
 }
 
@@ -379,7 +432,7 @@
         width: 20rem;
     }
 
-    .about .about__text h1 {
+    .about .about__text h2 {
         max-width: fit-content;
         font-size: 3rem;
         margin: 0 auto;
@@ -395,19 +448,6 @@
         margin-top: 2rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
