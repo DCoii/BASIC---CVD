@@ -327,9 +327,9 @@
     justify-content: center;
 }
 
-/* .about .about__text {
+.about .about__text {
     margin-left: 5rem;
-} */
+}
 
 .about .about__text h2 {
     color: #ffa700;
@@ -348,7 +348,6 @@
 }
 
 .about .about__image {
-    margin-right: 10rem;
     position: relative;
     top: 0;
     left: 0;
@@ -388,6 +387,12 @@
 
     .about img {
         margin-bottom: 3rem;
+    }
+
+    .about .about__text p {
+        max-width: 40rem;
+        text-align: justify;
+        margin-top: 2rem;
     }
 }
 
