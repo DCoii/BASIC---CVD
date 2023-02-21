@@ -134,6 +134,9 @@
 .header {
     background: #2b2b2b;
     padding: 2rem 0;
+    position: relative;
+    position: fixed;
+    width: 100%;
 }
 
 .header .branding img {
@@ -191,7 +194,22 @@
     display: block;
     margin-bottom: .5rem;
     border-radius: 5rem;
-    padding: .4rem;
+    transition: .5s ease;
+}
+
+.toggle__menu.open span:nth-child(1) {
+    transform: translate(0, 9px) rotate(225deg);
+    transition: .5s ease;
+}
+
+.toggle__menu.open span:nth-child(2) {
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.toggle__menu.open span:nth-child(3) {
+    transform: translate(0, -7px) rotate(-225deg);
+    transition: .5s ease;
 }
 
 @media screen and (max-width:500px) {
@@ -199,9 +217,10 @@
         position: absolute;
         background: #ffffff;
         top: 9.5rem;
-        left: 0;
+        right: -100rem;
         width: 100%;
         height: 100vh;
+        transition: .5s ease;
     }
 
     .header .header__nav ul{
@@ -211,6 +230,7 @@
     
     .header .header__nav ul li {
         margin-left: 0;
+        border-bottom: 1px solid #2b2b2b;
     }
 
     .header .header__nav ul li a {
@@ -218,7 +238,200 @@
         font-size: 3rem;
     }
 
+    .header .header__nav ul li:hover {
+        background: hsl(0, 0%, 50%);
+    }
+
     .toggle__menu {
         display: block;
     }
+
+    .header__nav.open {
+        right: 0;
+        transition: .5s ease;
+    }
+}
+
+/*--------------BANNER-------------*/
+.banner {
+    background: #ffffff;
+    padding: 5rem 0;
+    padding-top: 15rem;
+}
+
+.banner .banner__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .banner__text {
+    margin-right: 10rem;
+}
+
+.banner .banner__text h1 {
+    color: #ffa700;
+    font-size: 8rem;
+    font-weight: 800;
+    max-width: 40rem;
+    line-height: 1.2;
+}
+
+.banner .banner__text p {
+    max-width: 40rem;
+    text-align: justify;
+    margin: 3rem 0;
+}
+
+.banner a#banner__btn {
+    font-weight: 550;
+    text-transform: uppercase;
+    border: 1px solid transparent !important;
+}
+
+@media screen and (max-width:500px) {
+    .banner .banner__wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .banner .banner__text {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .banner img {
+        width: 20rem;
+    }
+
+    .banner .banner__text h1 {
+        max-width: fit-content;
+        font-size: 3rem;
+        margin: 0 auto;
+    }
+
+    .banner img {
+        margin-bottom: 3rem;
+    }
+}
+
+/*------------------ABOUT ME----------------*/
+.about {
+    background: #ffffff;
+    padding: 5rem 0;
+    padding-top: 5rem;
+}
+
+.about .about__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .about .about__text {
+    margin-left: 5rem;
+} */
+
+.about .about__text h2 {
+    color: #ffa700;
+    font-size: 4rem;
+    font-weight: 600;
+    max-width: 40rem;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+}
+
+.about .about__text p {
+    max-width: 60rem;
+    text-align: justify;
+    margin-top: 2rem;
+}
+
+.about .about__image {
+    margin-right: 10rem;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.about .aboutMain {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.about .aboutOverlay {
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width:500px) {
+    .about .about__wrapper {
+        flex-direction: column;
+    }
+    .about .about__text {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .about img {
+        width: 20rem;
+    }
+
+    .about .about__text h1 {
+        max-width: fit-content;
+        font-size: 3rem;
+        margin: 0 auto;
+    }
+
+    .about img {
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------REPEATABLE PATTERN---------------*/
+.btn {
+    padding: 1.2rem 1.5rem;
+    border-radius: 5rem;
+    display: inline-block;
+    border: 1px solid transparent;
+}
+
+.bg--yellow {
+    background: #ffa700;
+    color: #ffffff;
+}
+
+.bg--yellow:hover {
+    background: #2b2b2b;
+    border: 1px solid #ffa700;
+}
+
+.bg--dark {
+    background: #2b2b2b;
+    color: #ffffff;
+}
+
+.bg--dark:hover {
+    background: #ffa700;
 }
