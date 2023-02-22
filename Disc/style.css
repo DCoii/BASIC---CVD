@@ -449,10 +449,169 @@
     }
 }
 
+/*------------------TRENDS----------------*/
+.trends {
+    background: #2b2b2b;
+    padding: 5rem 0;
+    padding-top: 5rem;
+}
 
+.trends .trends__card {
+    background: #ffffff;
+    border-radius: 2rem;    
+    align-items: center;
+}
 
+.trends .trends__card img {
+    width: 100%;
+}
 
+.trends .trends__card .trends__card_text {
+    margin: 0 2rem;
+}
 
+.trends .trends__card .trends__card_text h4 {
+    color: #ffa700;
+    font-weight: 600;
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+.trends .trends__card .trends__card_text p {
+    color: #2b2b2b;
+    text-align: justify;
+    margin: 3rem 0;
+}
+
+.trends .trends__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10rem;
+}
+
+.trends .trends__text h2 {
+    color: #ffa700;
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.trends .trends__text p {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 8rem;
+}
+
+.trends .trends__card_text a {
+    color: #ffa700;
+}
+
+@media screen and (max-width:500px) {
+    .trends .trends__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5rem;
+    }
+
+    .trends .container {
+        margin-left: 6rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .trends .trends__card {
+        background: #ffffff;
+        border-radius: 2rem;
+        max-width: 35rem;
+        align-items: center;
+    }
+
+    .trends .trends__text h2 {
+        color: #ffa700;
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+    .trends .trends__text p {
+        color: #ffffff;
+        margin-bottom: 5rem;
+    }
+}
+
+/*------------------CONTACT----------------*/
+.hm-contact {
+    background: #ffa700;
+    padding: 5rem 0;
+    padding-top: 5rem;
+}
+
+.hm-contact .hm-contact__text {
+    text-align: center;
+}
+
+.hm-contact .hm-contact__text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.hm-contact .hm-contact__text p {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+.hm-contact__text a#hm-contact__btn {
+    font-weight: 550;
+    text-transform: uppercase;
+    border: 1px solid transparent !important;
+}
+
+@media screen and (max-width:500px) {
+    .hm-contact .hm-contact__text h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        padding-bottom: 1rem;
+    }
+
+    .hm-contact .hm-contact__text p {
+        font-size: 1.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .hm-contact .hm-contact__text a {
+        font-size: 1.5rem;
+    }
+}
+
+/*------------------FOOTER----------------*/
+.footer {
+    background: #2b2b2b;
+    padding-top: 2rem;
+}
+
+.footer .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .socialmedia__icons ul {
+    display: flex;
+}
+
+.footer .socialmedia__icons ul li {
+    margin-right: 2rem;
+}
+
+.footer .socialmedia__icons ul .footer__address {
+    color: gray;
+}
+
+.footer .socialmedia__icons ul li a {
+    color: gray;
+}
+
+.footer .footer__wrapper .footer__text {
+    color: gray;
+}
 
 /*--------------REPEATABLE PATTERN---------------*/
 .btn {
@@ -478,5 +637,6 @@
 }
 
 .bg--dark:hover {
-    background: #ffa700;
+    background: white;
+    color: #2b2b2b;
 }
