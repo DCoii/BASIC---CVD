@@ -924,7 +924,7 @@
 }
 
 .updates .rp__item .rp__item-text h4{
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     font-weight: 600;
 }
 
@@ -971,10 +971,6 @@
         justify-content: center;
     }
 
-    .updates {
-        margin: 0 2rem;
-    }
-
     .updates .updates__author ul li i {
         margin-right: .5rem;
     }
@@ -1004,15 +1000,12 @@
 
     .updates .updates__item:last-child {
         border-bottom: 1px solid #c4c3c3;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
     
     .updates .updates__categ {
         padding: 1rem 0;
-        padding-bottom: 5rem;
-    }
-
-    .updates .updates__item:last-child {
-        padding-top: 5rem;
         padding-bottom: 5rem;
     }
 
@@ -1024,14 +1017,36 @@
 
     .updates .updates__title {
         padding-top: 0;
+        line-height: 3rem;
     }
 
     .updates {
         background: #ffffff;
         padding: 5rem 0;
         padding-top: 14rem;
+        margin: 0 2rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
