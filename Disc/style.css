@@ -826,11 +826,11 @@
 .updates .updates__wrapper {
     display: grid;
     grid-template-columns: 2.5fr 1.5fr;
+    grid-gap: 5rem;
 }
 
 .updates .updates__title {
     padding-top: 5rem;
-    padding-bottom: 8rem;
 }
 
 .updates .updates__title h1 {
@@ -872,6 +872,69 @@
 .updates .updates__item img{
     width: 100%;
 }
+
+.updates .updates__item {
+    padding: 5rem 0;
+}
+
+.updates .updates__item:not(:last-child) {
+    border-bottom: 1px solid #c4c3c3;
+}
+
+.updates .updates__item:last-child {
+    padding-top: 5rem;
+    padding-bottom: 0;
+}
+
+.updates .updates__categ {
+    padding: 5rem 0;
+    padding-bottom: 10.3rem;
+}
+
+.updates .updates__categ h3 {
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.updates .updates__categ table {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.updates .updates__categ table tr {
+    height: 5rem;
+}
+
+.updates .updates__rp h3 {
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+    padding-top: 10rem;
+}
+
+.updates .rp__item {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.updates .rp__item .rp__item-text {
+    margin-left: 2rem;
+}
+
+.updates .rp__item .rp__item-text h4{
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.updates .updates__rp {
+    border-top: 1px solid #c4c3c3;
+    border-bottom: 1px solid #c4c3c3;
+    padding-bottom: 5rem;
+}
+
+
 
 
 
