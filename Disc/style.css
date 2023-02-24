@@ -1028,9 +1028,125 @@
     }
 }
 
+/* SSSSSSSEEEEEEEEEERRRRRRRRRRRVVVVVVVIIIIICEEESSS SECTION */
+.services {
+    background: #ffffff;
+    padding: 5rem 0;
+    padding-top: 10rem;
+}
 
+.services .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.services .services__text p {
+    text-align: justify;
+    max-width: 55rem;
+    margin-top: 3rem;
+}
 
+.services .services__text h1 {
+    font-size: 6rem;
+    color: #ffa700;
+    font-weight: 700;
+    line-height: 6rem;
+    padding-bottom: 2rem;
+    max-width: 50rem;
+}
+
+.services .services__text h3 {
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.services .services__text .italic {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.services .services__text .italic#maxwidth {
+    margin: 0;
+    font-size: 1rem;
+    max-width: 15rem;
+}
+
+.services .services__text .Price__text {
+    margin-top: 6rem;
+}
+
+.services .chevron {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.services .chevron a {
+    color: #ffa700;
+}
+
+.service2 {
+    background: #2b2b2b;
+    padding: 10rem 0;
+}
+
+.service2 .container {
+    display: flex;
+    align-items: center;
+}
+
+.services .services__text p#white__text {
+    color: #ffffff;
+}
+
+.services .heightOnly {
+    padding: 5rem;
+}
+
+.services#next2 {
+    padding: 8rem;
+}
+
+@media screen and (max-width:500px) {
+    .services .container {
+        flex-direction: column-reverse;
+    }
+
+    .service2 .container {
+        flex-direction: column;
+    }
+
+    .services .services__text h1 {
+        font-size: 5rem;
+        color: #ffa700;
+        font-weight: 700;
+        line-height: 5rem;
+        padding-bottom: 2rem;
+        max-width: 50rem;
+        padding-top: 5rem;
+        text-align: center;
+    }
+
+    .services .heightOnly {
+        padding: 2rem;
+    }
+
+    .services {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .service2 {
+        background: #2b2b2b;
+        padding: 5rem 2rem;
+    }
+
+    .services#next2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
 
 
 
