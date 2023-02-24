@@ -1149,19 +1149,92 @@
 }
 
 
+/* COOOOOOOOONNNNNNNNNNNTAAAAAAACCCCCCTTTT */
+.contactsec {
+    background: #2b2b2b;
+    padding: 19rem 0;
+    border-bottom: 1px solid #ffffff;
+}
 
 
+.contactsec .contactsec__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 4rem;
+}
 
+.contactsec .socialmedia__icons ul {
+    display: flex;
+}
 
+.contactsec .socialmedia__icons {
+    display: flex;
+}
 
+.contactsec .socialmedia__icons ul li {
+    margin-right: 5rem;
+}
 
+.contactsec .socialmedia__icons ul li a {
+    color: #ffffff;
+    font-size: 3rem;
+}
 
+.contactsec .socialmedia__icons ul li a:hover {
+    color: #ffa700;
+}
 
+.contactsec .contactsec__author ul {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
 
+.contactsec .contactsec__author ul li {
+    padding: 2rem 0;
+    color: #ffffff;
+}
 
+.contactsec .contactsec__author ul li i {
+    color: #ffa700;
+    margin-right: 5rem;
+    font-size: 2rem;
+}
 
+.contactsec .contactsec__left h1 {
+    color: #ffa700;
+    font-size: 7rem;
+    font-weight: 800;
+}
 
+.contactsec .contactsec__left p {
+    color: #ffffff;
+    padding-top: 5rem;
+    max-width: 55rem;
+}
 
+.contactsec .contactsec__right .name {
+    padding: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.contactsec .contactsec__right .message {
+    padding: 2rem;
+    padding-bottom: 15rem;
+    width: 100%;
+}
+
+.contactsec .contactsec__wrapper {
+    align-items: end;
+}
+
+.contactsec .contactsec__right .btn {
+    margin-top: 3rem;
+}
+
+.contactsec .contactsec__right {
+    text-align: right;
+}
 
 
 
@@ -1214,4 +1287,9 @@
     font-weight: 600;
     background: #2b2b2b;
     color: #ffffff;
+}
+
+.header_shadow {
+    border-bottom: 3px solid rgb(73, 68, 68);
+    opacity: 50%;
 }
